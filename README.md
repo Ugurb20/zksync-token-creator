@@ -1,8 +1,12 @@
-# React + Vite
+# Token Deployer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Token Deployer App enables users to easily create and deploy their own ERC20 tokens on the Ethereum blockchain without needing to write any smart contract code. Built with React and leveraging the power of Web3.js for blockchain interactions, this app offers a user-friendly interface for specifying token parameters (such as name, symbol, and supply) and deploying them directly to the network.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Easy Token Creation**: Users can create ERC20 tokens by filling out a simple form.
+- **MetaMask Integration**: Seamless integration with MetaMask for transaction signing and Ethereum account management.
+- **Real-Time Feedback**: Users receive immediate transaction hash and confirmation notifications.
+- **Event Listening**: The app listens for the `TokenCreated` event to notify users when their tokens are successfully deployed.
+
+
