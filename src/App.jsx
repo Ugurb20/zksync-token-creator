@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './assets/logoT.webp';
+import logo from './assets/logo.svg';
 import { useEffect, useState } from 'react';
 import Web3 from 'web3';
 import data from './data.json';
@@ -96,6 +96,7 @@ function App() {
       <div className="header">
         <div className="logo">
           <img src={logo} alt="Token Creator Logo" />
+          <p>ZK-Sync Token Creator</p>
         </div>
         <button className="connect-btn" onClick={connectWalletHandler}>
           {account
