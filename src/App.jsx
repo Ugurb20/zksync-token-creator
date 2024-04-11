@@ -108,7 +108,7 @@ function App() {
       </div>
 
       <div className="form-wrapper">
-        <h1>Create Your and Mint your Own Token</h1>
+        <h1>Create and Mint your Own Token</h1>
         <input
           type="text"
           placeholder="Token Name"
