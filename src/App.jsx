@@ -49,6 +49,28 @@ function App() {
     }
   };
 
+  const handleTokenAdd = async () => {
+    if (window.ethereum) {
+      try {
+        await window.ethereum.request({
+          method: 'wallet_watchAsset',
+          params: {
+            type: 'ERC20',
+            options: {
+              address: tokenAddress,
+              symbol: tokenSymbol,
+              decimals: 18,
+            },
+          },
+        });
+      } catch (error) {
+        console.error('Error adding token to MetaMask', error);
+      }
+    } else {
+      console.log('Install MetaMask.');
+    }
+  };
+
   const createTokenHandler = async (tokenName, tokenSymbol, tokenSupply) => {
     setTokenCreated(false);
     const web3 = new Web3(window.ethereum);
@@ -134,6 +156,14 @@ function App() {
         >
           Create and Mint Token
         </button>
+        {tokenCreated && (
+          <button
+            onClick={handleTokenAdd}
+            style={{ marginTop: '20px', background: '#7F00FF' }}
+          >
+            Click to add your token to Wallet
+          </button>
+        )}
       </div>
 
       <div className="token-details-wrapper">
