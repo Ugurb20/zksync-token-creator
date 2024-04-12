@@ -114,3 +114,43 @@ h1 {
 .token-details * {
   margin-bottom: 10px;
 }
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo,
+  .header .connect-btn {
+    width: 90%;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 15px;
+  }
+
+  .form-wrapper,
+  .token-details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-wrapper input,
+  .form-wrapper button {
+    width: 90%;
+  }
+
+  .token-details {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
