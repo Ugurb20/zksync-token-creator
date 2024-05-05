@@ -9,4 +9,5 @@ The Token Deployer App enables users to easily create and deploy their own ERC20
 - **Real-Time Feedback**: Users receive immediate transaction hash and confirmation notifications.
 - **Event Listening**: The app listens for the `TokenCreated` event to notify users when their tokens are successfully deployed.
 
-
+## Live link
+https://zk-sync-token-creator.netlify.app/
